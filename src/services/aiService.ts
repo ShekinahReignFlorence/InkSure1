@@ -374,23 +374,13 @@ export async function processDocumentImage(
         isFinalWord: isFinal,
       };
     });
+  
   } else {
-    // Ground-truth fallback for test handwriting note:
-    // "By the time I tell you something, I've already dealt with it."
-    const verifiedTokens = [
-      'By',
-      'the',
-      'time',
-      'I',
-      'tell',
-      'you',
-      'something,',
-      "I've",
-      'already',
-      'dealt',
-      'with',
-      'it.',
-    ];
+    // Do not invent a transcription when both AI and local OCR fail.
+    throw new Error(
+      'No text could be recognized from this image. Check the AI backend or try a clearer image.'
+    );
+  }
     const alignedBoxes = await alignWordsToInkBoxes(imageSrc, verifiedTokens);
 
     rawWordsData = verifiedTokens.map((token, idx) => {
