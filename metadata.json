@@ -1,0 +1,6 @@
+{
+  "name": "InkSure - Evidence-Aware Handwriting Digitization",
+  "description": "Evidence-aware extreme bad-handwriting digitization system that knows when not to guess. Multi-pass recognition, uncertainty classification, and human review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
