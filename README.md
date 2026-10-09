@@ -4,7 +4,7 @@
 > Built to know when *not* to guess. When the system does not have enough optical evidence, it abstains instead of hallucinating.
 
 ---
-Live Website:https://ai.studio/apps/7a3e7924-3acb-4b27-9051-93bfdce8a88a
+Live Website:https://inksure.ai.studio
 
 ## 🌟 Key Highlights & Completely Free Architecture
 
